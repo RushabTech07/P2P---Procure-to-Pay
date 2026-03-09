@@ -4,6 +4,7 @@
   import Register from "./pages/Register";
   import Dashboard from "./pages/Dashboard";
   import CreateRequest from "./pages/CreateRequest";
+  import VendorCreation from "./pages/VendorCreation";
   import ProtectedRoute from "./components/ProtectedRoute";
   import Header from "./components/Header";
 
@@ -30,6 +31,15 @@
             element={
               <ProtectedRoute>
                 <CreateRequest />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/vendor-creation"
+            element={
+              <ProtectedRoute>
+                <VendorCreation />
               </ProtectedRoute>
             }
           />
